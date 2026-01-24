@@ -1,0 +1,22 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env
+venv/
+*.egg-info/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints
+
+# Images or datasets (optional, large files)
+*.jpg
+*.png
+*.csv
+*.npz
+
+# Saved models (optional, large files)
+saved_models/u2netp/u2netp.pth
