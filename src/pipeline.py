@@ -1,7 +1,7 @@
-from preprocessing import load_images
-from u2net_segmentation import segment_spider_u2net
-from region_separation import sep_abdomen_spine, get_segmented_spider_image
-from features import extract_abdomen_color, extract_spine_color
+from src.preprocessing import load_images
+from src.u2net_segmentation import segment_spider_u2net
+from src.region_separation import sep_abdomen_spine, get_segmented_spider_image
+from src.features import extract_abdomen_color, extract_spine_color
 
 def process_spider_image(img_path, u2net_model, device="cpu"):
     image = load_images(img_path)

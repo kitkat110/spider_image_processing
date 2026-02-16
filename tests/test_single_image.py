@@ -1,9 +1,9 @@
 import os
 import sys
 import matplotlib.pyplot as plt
-from config import U2NET_MODEL_PATH
-from u2net_segmentation import load_u2net_model
-from pipeline import process_spider_image
+from src.config import U2NET_MODEL_PATH
+from src.u2net_segmentation import load_u2net_model
+from src.pipeline import process_spider_image
 
 # Allow imports from project root
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

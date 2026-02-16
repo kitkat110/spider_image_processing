@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-from color_classification import classify_color_distance
+from src.color_classification import classify_color_distance
 
 def extract_abdomen_color(image, mask):
     """
