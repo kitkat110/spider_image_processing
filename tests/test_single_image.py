@@ -1,18 +1,19 @@
 import os
 import sys
 import matplotlib.pyplot as plt
-from src.config import U2NET_MODEL_PATH
-from src.u2net_segmentation import load_u2net_model
-from src.pipeline import process_spider_image
 
 # Allow imports from project root
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(PROJECT_ROOT)
 
+from src.config import U2NET_MODEL_PATH
+from src.u2net_segmentation import load_u2net_model
+from pipeline import process_spider_image
+
 device = "cpu"
 u2net_model = load_u2net_model(U2NET_MODEL_PATH, device)
 
-img_path = "/Users/minimal_kitkat/Desktop/spiny_orb4.jpg"
+img_path = os.path.join(PROJECT_ROOT, "Images", "spiny_orb.jpg")
 results = process_spider_image(img_path, u2net_model, device=device)
 
 print("Abdomen Color:", results["abdomen_color"])

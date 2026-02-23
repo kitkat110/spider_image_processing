@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # --- Load and preprocess images ---
-def load_images(img_path, size=512):
+def load_images(img_path: str, size=512): 
     """
     Ensure all images are same size and enhanced
 
@@ -18,13 +18,10 @@ def load_images(img_path, size=512):
     if img is None:
         return None
 
-    # Convert from OpenCV's default BGR to RGB
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img = cv2.resize(img, (size, size))
 
-    # Convert RGB to LAB (separate lightness from color channels)
     lab = cv2.cvtColor(img, cv2.COLOR_RGB2LAB)
-    # Split LAB channels
     l, a, b = cv2.split(lab)
 
     # Apply CLAHE to L-channel to enhance contrast
