@@ -26,8 +26,7 @@ A single-image entry point (`test_single_image.py`) is also provided for local i
 ```
 spider_image_processing/
 ├── get_observations.py       # Fetch + download iNaturalist observations
-├── inaturalist_pipeline.py   # Run segmentation pipeline over downloaded images
-├── pipeline.py               # Single-image pipeline (local file)
+├── pipeline.py               # Run segmentation pipeline over downloaded images
 │
 ├── src/
 │   ├── preprocessing.py      # Image loading, resizing, CLAHE enhancement
