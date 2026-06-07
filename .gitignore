@@ -9,14 +9,13 @@ __pycache__/
 venv/
 *.egg-info/
 
-# Jupyter notebook checkpoints
-.ipynb_checkpoints
-
-# Images or datasets (optional, large files)
+# Images or datasets
 *.jpg
 *.png
 *.csv
 *.npz
 
-# Saved models (optional, large files)
+# Saved models
 saved_models/u2netp/u2netp.pth
+
+.DS_Store
