@@ -9,10 +9,9 @@ __pycache__/
 venv/
 *.egg-info/
 
-# Images or datasets
+# Images
 *.jpg
 *.png
-*.csv
 *.npz
 
 # Saved models

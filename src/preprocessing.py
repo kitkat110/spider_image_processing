@@ -25,7 +25,7 @@ def load_images(img_path: str, size: int = 512) -> np.ndarray | None:
     img = cv2.resize(img, (size, size))
 
     lab = cv2.cvtColor(img, cv2.COLOR_RGB2LAB)
-    l, a, b = cv2.split(lab)
+    l, a, b = cv2.split(lab)  # noqa: E741
 
     # Apply CLAHE to L-channel to enhance contrast
     clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
