@@ -5,15 +5,14 @@ import numpy as np
 
 def load_images(img_path: str, size: int = 512) -> np.ndarray | None:
     """
-    Load a raw image from disk, resize it, and enhance contrast using CLAHE.
+    Load a raw image from disk, resize it, and enhance contrast using CLAHE
 
     Args:
-        img_path: Path to the image file.
-        size:     Desired width and height in pixels to resize the image.
+        img_path: Path to the image file
+        size: Desired width and height in pixels to resize the image
 
     Returns:
-        Preprocessed RGB image as a NumPy array, or None if the image
-        could not be loaded.
+        Preprocessed RGB image as a NumPy array, or None if the image could not be loaded
     """
     logging.debug(f"Loading image: {img_path}")
 
